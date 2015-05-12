@@ -3,15 +3,40 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
+    <ImageButton
+        android:id="@+id/praiseIb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/praise" />
+
+    <TextView
+        android:id="@+id/praiseTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/descTextView"
+        android:layout_below="@+id/praiseIb"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/praiseTv"
         android:ellipsize="end"
-        android:textColor="@color/black"
-        android:textSize="26sp" />
+        android:paddingRight="4dp"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/descTextView"
@@ -19,10 +44,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/titleTextView"
         android:layout_marginBottom="2dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:ellipsize="end"
+        android:paddingRight="4dp"
         android:textColor="@color/black"
-        android:textSize="12sp" />
+        android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/bottomLine"
@@ -30,4 +57,5 @@
         android:layout_height="0.5dp"
         android:layout_alignParentBottom="true"
         android:background="@color/gray" />
+
 </RelativeLayout>
